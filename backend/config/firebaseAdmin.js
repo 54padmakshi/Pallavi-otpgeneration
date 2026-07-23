@@ -11,7 +11,8 @@ let serviceAccount;
 if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
   serviceAccount = JSON.parse(
     process.env.FIREBASE_SERVICE_ACCOUNT_JSON
-  );
+  );console.log("Private key begins with:");
+console.log(serviceAccount.private_key.substring(0, 40));
 
   // Convert escaped newlines into actual newlines
   serviceAccount.private_key = serviceAccount.private_key.replace(
