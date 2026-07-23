@@ -29,7 +29,7 @@ if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
   const keyPath = path.join(__dirname, "serviceAccountKey.json");
   credential = admin.credential.cert(require(keyPath));
 }
-} else {
+ else {
   // Local development: load the downloaded service account file
   const keyPath = path.join(__dirname, "serviceAccountKey.json");
   credential = admin.credential.cert(require(keyPath));
