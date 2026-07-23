@@ -3,4 +3,4 @@
 // - Emulator (Android Studio): http://10.0.2.2:4000
 // - Production: your deployed backend URL, e.g. https://api.pallavi.app
 
-export const API_BASE_URL = "http://192.168.1.5:4000";
+export const API_BASE_URL = "https://pallavi-otpgeneration.onrender.com";
